@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Test</string>
+    <string name="name">Enter your name</string>
+    <string name="question1">Enter your answer</string>
+    <string name="question7">Enter your answer</string>
+    <string name="question6">Enter your answer</string>
+</resources>

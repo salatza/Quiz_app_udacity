@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D7CCC8"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.android.literature_quiz.MainActivity">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/books1"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Begin the Quiz"
+                android:textAllCaps="true"
+                android:textColor="#000000"
+                android:textSize="40sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:fontFamily="sans-serif-smallcaps"/>
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:text="Question 1"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:background="#4E342E">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Who is the writer of The Gambler?"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+            <EditText
+                android:id="@+id/question1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/question1"
+                android:gravity="center"
+
+                />
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:text="Question 2"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:background="#4E342E">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="William Shakespeare was an English:"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/engineer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="question2"
+                    android:text="engineer" />
+
+                <RadioButton
+                    android:id="@+id/football"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="question2"
+                    android:text="football player" />
+
+                <RadioButton
+                    android:id="@+id/poet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="question2"
+                    android:text="poet" />
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/romeo"/>
+
+        </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:text="Question 3"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:background="#4E342E">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Agatha Cristie is well known about her:"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/romance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="question3"
+                    android:text="romance novels" />
+
+                <RadioButton
+                    android:id="@+id/detective"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="question3"
+                    android:text="detective novels" />
+
+            </RadioGroup>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginLeft="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/poirot"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="Question 4"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:background="#4E342E">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Leo Tolstoy is the writer of:"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+                <RadioButton
+                    android:id="@+id/war"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="question4"
+                    android:text="War and Peace" />
+
+                <RadioButton
+                    android:id="@+id/bro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="question4"
+                    android:text="The brothers Karamazov" />
+
+                <RadioButton
+                    android:id="@+id/crime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="question4"
+                    android:text="Crime and Punishment" />
+            </RadioGroup>
+
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:text="Question 5"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:background="#4E342E">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Omiros is a writer who lived in:"
+            android:textStyle="italic"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/greece"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question5"
+                android:text="Ancient Greece" />
+
+            <RadioButton
+                android:id="@+id/rome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question5"
+                android:text="Ancient Rome" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="Question 6"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:background="#4E342E">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingBottom="10dp"
+            android:textStyle="italic"
+            android:paddingTop="10dp"
+            android:text="Name the greatest novel of Miguel de Cervantes:"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/question6"
+                android:inputType="textCapWords"
+                android:id="@+id/question6"
+                android:onClick="checkAnswer6"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="80dp"
+                android:src="@drawable/quixote"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:textStyle="bold"
+            android:text="Question 7"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:background="#4E342E">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:textStyle="italic"
+            android:text="Who is the writer of Living, Loving and Learning:"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:onClick="checkAnswer7"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="@string/question7"
+            android:onClick="checkAnswer7"
+            android:id="@+id/question7"
+            android:inputType="textCapWords" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="Question 8"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:background="#4E342E">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="The three best friends in Harry Potter are:"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:textSize="15sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+        <CheckBox
+            android:id="@+id/harry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:text="Harry Potter"
+            android:onClick="checkAnswer8"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/hermione"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="checkAnswer8"
+            android:paddingLeft="24dp"
+            android:text="Hermione Granger"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/draco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:onClick="checkAnswer8"
+            android:text="Draco Malfoy"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="16sp" />
+
+        <CheckBox
+            android:id="@+id/ron"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="24dp"
+            android:onClick="checkAnswer8"
+            android:text="Ron Weasley"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textSize="16sp" />
+            </LinearLayout>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:src="@drawable/harry"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:paddingTop="10dp"
+            android:text="Question 9"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:background="#4E342E">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="The image of Dorian Gray, that keeps him from ageing is captured in:"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:textSize="15sp" />
+
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/mirror"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question9"
+                android:text="A mirror" />
+
+            <RadioButton
+                android:id="@+id/painting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question9"
+                android:text="A painting" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:text="Question 10"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="150dp"
+            android:layout_height="1dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="1dp"
+            android:background="#4E342E">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="The Lord of the Rings is an epic fantasy novel written by:"
+            android:textColor="#000000"
+            android:textStyle="italic"
+            android:textSize="15sp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/tolkien"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question10"
+                android:text="J. R. R. Tolkien" />
+
+            <RadioButton
+                android:id="@+id/rowling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="question10"
+                android:text="J. K. Rowling" />
+
+        </RadioGroup>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:src="@drawable/lord"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:hint="@string/name"
+            android:inputType="textCapWords" />
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:onClick="checkAnswer167"
+            android:background="@drawable/book2"
+            android:layout_gravity="center_horizontal"
+            android:text="Submit your answers"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="8dp"
+                android:onClick="showResults"
+                android:text="Show results"
+                android:id="@+id/button"
+                android:visibility="gone"
+                android:textColor="#3E2723"
+                android:textSize="16sp"
+                android:background="@drawable/oldbook"
+                />
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="8dp"
+                android:onClick="sendResults"
+                android:text="Send results"
+                android:id="@+id/send"
+                android:visibility="gone"
+                android:textColor="#3E2723"
+                android:textSize="16sp"
+                android:background="@drawable/message2"
+                />
+
+
+
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=" "
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/answers"
+
+            />
+
+
+    </LinearLayout>
+
+</ScrollView>
